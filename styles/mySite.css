@@ -1,0 +1,973 @@
+﻿body {
+    direction: rtl;
+    background-color: rgb(241, 207, 174);
+    background-color: #F2DBD3;
+    font-family: 'heebo';
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Heebo';
+    src: url('fonts/Heebo-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Gveret Levin AlefAlefAlef';
+    src: url('fonts/Gveret Levin AlefAlefAlef Regular.ttf')
+}
+
+@font-face {
+    font-family: Papyrus;
+    src: url('fonts/PAPYRUS.TTF');
+}
+
+.notActive {
+    cursor: not-allowed;
+    color: grey;
+}
+
+.mainNav {
+    position: relative;
+    background-color: #F2DBD3;
+        width:1280px;
+    height: 50px;
+    direction: rtl;
+    z-index: 1000;
+    display: flex;
+}
+
+    .mainNav > ul {
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
+        width:1280px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mainNav li {
+        font-size: 100%;
+        font-family: 'Gveret Levin AlefAlefAlef';
+        position: relative;
+    }
+
+    .mainNav ul li a {
+        display: block;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #F2DBD3;
+        color: #48311F;
+        transition: background-color 0.3s ease;
+        font-size: 18px;
+    }
+
+        .mainNav ul li a:hover {
+            background-color: #AABC95;
+        }
+
+    .mainNav ul li ul {
+        display: none;
+        position: fixed;
+        top: 50px;
+        background-color: #AABC95;
+        padding: 0;
+        list-style: none;
+        z-index: 1001;
+        min-width: 150px;
+    }
+
+        .mainNav ul li ul li {
+            width: 100%;
+        }
+
+            .mainNav ul li ul li a {
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                padding: 0;
+            }
+
+    .mainNav ul li:hover ul {
+        display: block;
+    }
+   
+    /*עמוד הבית*/
+.backgroundHome {
+    background-image: url("../images/pinki.png");
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+h1 {
+    font-family: Papyrus;
+    font-size: 100px;
+    text-align: right;
+    margin-top: 80px;
+    margin-right: 100px;
+    color: rgb(20, 94, 37);
+}
+
+.melel {
+    text-align: center;
+    padding-top: 350px;
+    font-family: Heebo;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 280px;
+    padding-right: 280px;
+}
+h3 {
+    font-size: 40px;
+    color: rgb(20, 94, 37);
+    font-family: 'Gveret Levin AlefAlefAlef';
+}
+
+#first {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    padding: 20px;
+}
+
+#choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.choose2 h4 {
+    padding-right: 40px;
+    text-align: center;
+    margin-left: 20px;
+}
+#choose-container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.drink {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(241, 207, 174);
+    font-size: 20px;
+    font-weight: 500;
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(20, 94, 37,0.9);
+    font-family: Heebo;
+    width: 200px;
+    height: 200px;
+}
+
+.drink:hover .hover-text {
+    display: block;
+}
+
+.kishur {
+    padding-bottom:50px;
+    margin-left:20px;
+}
+.kishur a {
+    font-size: 15px;
+    color: rgb(20, 94, 37);
+    font-family: Heebo;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(152, 198, 170);
+    border-radius: 36px;
+}
+
+.kishur:visited {
+    color: hotpink;
+    text-decoration: none;
+}
+
+/*דף צור קשר*/
+.backgroundContact {
+    background-image: url("../images-contact/cocktailBackG.png");
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+/*כותרת יש לכם קוקטייל מנצח*/
+#wincocktail {
+    position: relative;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    color: rgb(20, 94, 37);
+    font-weight: 700;
+    font-size: 40px;
+    bottom: 50px;
+}
+
+/*כותרת רישמו לנו*/
+#writeus {
+    font-size: 25px;
+    color: rgb(20, 94, 37);
+    font-weight: bold;
+    bottom: 220px;
+}
+
+/*פירורי לחם*/
+.contactbread ol li {
+    position: relative;
+    top: 75px;
+    left: 35px;
+    display: inline-block;
+    color: #48311F;
+    font-family: Heebo;
+}
+
+.contactbread ol {
+    display: flex;
+}
+
+    .contactbread ol li {
+        display: inline-block;
+        padding-bottom: 20px;
+        color: #48311F;
+        font-family: Heebo;
+    }
+
+        .contactbread ol li a {
+            text-decoration: none;
+            color: #48311F;
+            font-family: Heebo;
+        }
+
+            .contactbread ol li a:hover {
+                text-decoration: underline;
+            }
+
+        .contactbread ol li:after {
+            content: ">";
+        }
+
+        .contactbread ol li:last-child:after {
+            content: " ";
+        }
+
+.contactUS {
+    padding-top: 65px;
+    font-size: 20px;
+    font-family: 'Gveret Levin AlefAlefAlef', sans-serif;
+    margin-bottom: 0;
+    margin-right: 100px;
+}
+.chooseRadio {
+    margin-top:0px;
+}
+.chooseRadio label {
+    font-family: Heebo;
+}
+
+.contactForm label {
+    font-family: Heebo;
+}
+
+.contactUS p {
+    font-family: Heebo;
+    font-weight: bold;
+    font-size: 20px;
+    color: #48311F;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.contactForm textarea {
+    height: 80px;
+    width: 280px;
+    font-family: Heebo;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.contactForm button {
+    font-family: Heebo;
+    color: rgb(20, 94, 37);
+    background-color: rgb(152, 198, 170);
+    border-radius: 16px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+/*אודות*/
+#cocktailing {
+    background-image: url("../images-odot/orange.png");
+    background-size: cover;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    height:1300px;
+}
+/*כותרת אודות*/
+#odot {
+    position: relative;
+    left: 100px;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    font-weight: 700;
+    font-size: 55px;
+    color: rgb(20, 94, 37);
+}
+
+
+/*תפריט פירורי לחם*/
+.aboutbread ol li {
+    position: relative;
+    left: 35px;
+    bottom: 30px;
+    display: inline-block;
+    color: #48311F;
+    font-family: Heebo;
+}
+
+    .aboutbread ol li a {
+        text-decoration: none;
+        color: #48311F;
+        font-family: Heebo;
+    }
+
+        .aboutbread ol li a:hover {
+            text-decoration: underline;
+        }
+
+    .aboutbread ol li:after {
+        content: ">";
+    }
+
+    .aboutbread ol li:last-child:after {
+        content: "";
+    }
+
+
+/*כותרת מטרת האתר*/
+#goal {
+    position: relative;;
+    right: 30px;
+    font-family: Heebo;
+    font-weight: 700;
+    font-size: 20px;
+    color: #48311F;
+}
+/*פסקת תוכן מטרת האתר*/
+.about {
+    position: relative;
+    right: 30px;
+    width: 700px;
+    height: 60px;
+    color: #48311F;
+    font-family: Heebo;
+    text-align: right;
+}
+/*כותרת פותח על ידי*/
+#develop {
+    position: relative;
+    top: 40px;
+    left: 550px;
+    font-family: Heebo;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #48311F;
+}
+/*אמבר ארבל*/
+#embar {
+    position: relative;
+    top: 50px;
+    right: 2px;
+    font-family: Heebo;
+    color: #48311F;
+    font-size: 18px;
+}
+
+/*פסקת תוכן אמבר*/
+.Embar {
+    font-family: Heebo;
+    color: #48311F;
+    border-radius: 30px;
+    position: relative;
+    left: 100px;
+    width: 500px;
+    height: 200px;
+    text-align: right;
+    padding: 10px;
+    top: 20px;
+}
+
+/*תמונה של אמבר*/
+#embarimg {
+    position: relative;
+    bottom: 30px;
+    left: 120px;
+    float: right;
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+/*טלי אנטוקולסקי*/
+#tali {
+    position: relative;
+    bottom: 70px;
+    font-family: Heebo;
+    color: #48311F;
+    font-size: 18px;
+}
+
+/*תמונה של טלי*/
+#taliimg {
+    position: relative;
+    bottom: 150px;
+    left: 120px;
+    float: right;
+    max-width: 100px;
+    height: auto;
+    border-radius: 75%;
+}
+
+/*פסקת תוכן טלי*/
+.Tali {
+    font-family: Heebo;
+    color: #48311F;
+    border-radius: 30px;
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+    width: 500px;
+    height: 200px;
+    text-align: right;
+    padding: 10px;
+}
+/*כותרת כל הזכויות שמורות*/
+#rights {
+    position: relative;
+    bottom: 220px;
+    left: 510px;
+    font-family: Heebo;
+    font-weight: 700;
+    font-size: 20px;
+    color: #48311F;
+    text-align: center;
+}
+/*פסקת תוכן כל הזכויות שמורות*/
+.rights {
+    position: relative;
+    bottom: 240px;
+    right: 40px;
+    width: 700px;
+    height: 60px;
+    color: #48311F;
+    font-family: Heebo;
+    text-align: right;
+}
+/*כותרת הדפים שפותחו*/
+.webdevelop {
+    position: relative;
+    left: 245px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #48311F;
+    text-align: center;
+}
+
+.rights ul a {
+        height: 60px;
+        color: black;
+        font-family: Heebo;
+        text-align: right;
+    }
+
+.pages {
+    list-style: none;
+    position: relative;   
+   bottom: 20px;
+}
+
+    .pages li {
+        position: relative;
+        padding-left: 30px;
+    }
+
+        .pages li::before {
+            content: '';
+            position: absolute;
+            left: 670px;
+            width: 20px;
+            height: 20px;
+            background-image: url("../images-odot/iconUL.png");
+            background-size: cover;
+        }
+
+#logoHIT {
+    position: relative;
+    right: 450px;
+    display: inline-block;
+    max-width: 300px;
+    height: auto;
+    top: 80px;
+}
+
+/*מפת אתר*/
+/*תמונה*/
+#container-map {
+    background-image: url("../images-map/ingred-map.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+/* כותרת מפת אתר */
+#mapTitle {
+    right: 170px;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(20, 94, 37);
+    margin-top: 80px;
+}
+
+/* תפריט פירורי לחם מפת אתר*/
+.mapbread ol li {
+    position: relative;
+    right: 65px;
+    bottom:20px;
+    display: inline-block;
+    color: #48311F;
+    font-family: Heebo;
+}
+
+.mapbread ol {
+    display: flex;
+}
+
+    .mapbread ol li {
+        display: inline-block;
+        padding-bottom: 20px;
+        color: #48311F;
+        font-family: Heebo;
+    }
+
+        .mapbread ol li a {
+            text-decoration: none;
+            color: #48311F;
+            font-family: Heebo;
+        }
+
+            .mapbread ol li a:hover {
+                text-decoration: underline;
+            }
+
+        .mapbread ol li:after {
+            content: ">";
+        }
+
+        .mapbread ol li:last-child:after {
+            content: " ";
+        }
+
+/* מפת האתר */
+.mapNav {
+    display: flex;
+    position: relative; 
+    right:30px;
+    top: 20px;
+}
+.main-menu {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+    /* רווח */
+    .main-menu > li {
+        position: relative;
+        margin-left: 5px;
+    }
+
+        /* כותרות */
+        .main-menu > li > a {
+            text-decoration: none;
+            color: rgb(20, 94, 37);
+            font-family: Heebo;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px 15px;
+            display: block;
+            width: 75px;
+        }
+
+            .main-menu > li > a:hover {
+                text-decoration: underline;
+            }
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .submenu li a {
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 15px;
+        display: block;
+        font-family: Heebo;
+        width: 100px;
+        color: #48311F;
+    }
+
+        /* Hover */
+        .submenu li a:hover {
+            text-decoration: underline;
+        }
+
+/*קוקטייל מרגריטה*/
+/*תמונה*/
+.margaritaBG {
+    background-image: url("../images-margarita/bgmar3.png");
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*כותרת*/
+#cocktailTitle {
+    position: relative;
+    right: 300px;
+    top: 40px;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: rgb(20, 94, 37);
+    padding: 0px;
+    margin: 0;
+}
+
+#secondmarTitle {
+    position: relative;
+    top: 100px;
+    right: 320px;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(20, 94, 37);
+    margin: 0;
+}
+
+
+/*תפריט פירורי לחם*/
+.marbread ol li {
+    position: relative;
+    top: 5px;
+    right: 760px;
+    display: inline-block;
+    color: #48311F;
+    font-family: Heebo;
+}
+
+    .marbread ol li a {
+        text-decoration: none;
+        color: #48311F;
+        font-family: Heebo;
+    }
+
+        .marbread ol li a:hover {
+            text-decoration: underline;
+        }
+
+    .marbread ol li:after {
+        content: ">";
+    }
+
+    .marbread ol li:last-child:after {
+        content: "";
+    }
+
+/*פסקת תוכן*/
+#cocktailParagraph {
+    position: relative;
+    top:55px;
+    right: 288px;
+    width: 410px;
+    height: 60px;
+    margin-right: 510px;
+    color: #48311F;
+    font-family: Heebo;
+    text-align: right;
+}
+/*כותרת מרכיבים*/
+#cocktailingredientsT {
+    position: relative;
+    top: 80px;
+    right: 790px;
+    padding: 10px;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(20, 94, 37);
+}
+
+/*כותרת הוראות הכנה*/
+#cocktailrecipeT {
+    position: relative;
+    bottom: 55px;
+    right: 225px;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    color: rgb(20, 94, 37);
+}
+
+/* הוראות הכנה */
+#cocltailrecipeP {
+    position: relative;
+    bottom: 55px;
+    right: 775px;
+    width: 440px;
+    height: 200px;
+    font-family: 'Heebo', sans-serif;
+    color: #48311F;
+    line-height: 1.5;
+}
+
+/* מרכיבים */
+#cocktailingredientsL {
+    position: relative;
+    right: 725px;
+    padding: 50px;
+    width: 300px;
+    font-family: 'Heebo', sans-serif;
+    color: #48311F;
+    line-height: 1.5;
+}
+
+    #cocktailingredientsL li::before {
+        content: '';
+        position: absolute;
+        left: 265px;
+        top: 0%;
+        width: 20px;
+        height: 20px;
+        background-image: url("../icone-pinacolada/cocktail.png");
+        background-size: cover;
+    }
+
+#cocltailrecipeP li::before {
+    content: '';
+    position: absolute;
+    left: 445px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../icone-pinacolada/cocktail.png");
+    background-size: cover;
+}
+/*פונט פסקאות תוכן הוראות הכנה+מרכיבים*/
+#cocltailrecipeP li {
+    font-family: 'Heebo';
+    position: relative;
+    list-style: none;
+}
+
+#cocktailingredientsL li {
+    font-family: 'Heebo';
+    position: relative;
+    list-style: none;
+}
+
+/*פינה קולדה*/
+.pinacoladaBG {
+    background-image: url("../images-pinacolada/bg345.png");
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: auto;
+}
+/* תפריט פירורי לחם */
+.pinabread ol li {
+    position: relative;
+    top: 35px;
+    right: 740px;
+    display: inline-block;
+    color: #48311F;
+    font-family: Heebo;
+}
+
+.pinabread ol li a {
+    text-decoration: none;
+    color: #48311F;
+    font-family: Heebo;
+}
+
+        .pinabread ol li a:hover {
+            text-decoration: underline;
+        }
+
+    .pinabread ol li:after {
+        content: ">";
+    }
+
+    .pinabread ol li:last-child:after {
+        content: "";
+    }
+
+#secondpinaTitle {
+    position: relative;
+    top: 42px;
+    right: 320px;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(20, 94, 37);
+}
+
+#pinaParagraph {
+    position: relative;
+    top: 30px;
+    right: 288px;
+    width: 510px;
+    height: 60px;
+    margin-right: 510px;
+    color: #48311F;
+    font-family: Heebo;
+    text-align: right;
+}
+
+#pinaingredientsT {
+    position: relative;
+    top: 45px;
+    right: 340PX;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    color: rgb(20, 94, 37);
+}
+
+#pinaingredientsL {
+    position: relative;
+    bottom: 75px;
+    left:50px;
+    padding: 50px;
+    width: 300px;
+    font-family: 'Heebo', sans-serif;
+    color: #48311F;
+    line-height: 1.5;
+}
+
+#pinarecipeT {
+    position: relative;
+    bottom: 120px;
+    left: 65px;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    color: rgb(20, 94, 37);
+}
+
+#pinarecipeP {
+    position: relative;
+    bottom:125px;
+    width: 440px;
+    height: 200px;
+    font-family: 'Heebo', sans-serif;
+    color: #48311F;
+    line-height: 1.5;
+}
+
+
+    #pinarecipeP li::before {
+        content: '';
+        position: absolute;
+        left: 445px;
+        width: 20px;
+        height: 20px;
+        background-image: url("../icone-pinacolada/cocktail.png");
+        background-size: cover;
+    }
+
+/*פוטר*/
+.footerNav {
+    position: relative;
+    bottom: 0px;
+    background-color: #F2DBD3;
+    color: #48311F;
+    width: 100%;
+    height: 40px;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .footerNav > ul {
+        display: flex;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .footerNav li {
+        margin: 0 10px;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        background: transparent;
+        font-family: 'Gveret Levin AlefAlefAlef';
+    }
+
+        .footerNav li a {
+            display: block;
+            height: 20px;
+            line-height: 30px;
+            text-decoration: none;
+            background-color: #F2DBD3;
+            color: #48311F;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+            font-size: 18px;
+        }
+
+            .footerNav li a:hover {
+                background-color: #AABC95;
+            }
